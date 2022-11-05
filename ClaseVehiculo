@@ -1,0 +1,22 @@
+class Vehiculo:
+    def __init__(self,color,ruedas,puertas):
+        self.color="rojo"
+        self.ruedas = ruedas
+        self.puertas = puertas
+
+class Coche(Vehiculo):
+    def __init__(self,color,ruedas, puertas,velocidad,cilindrada):
+        self.color = color
+        self.ruedas = ruedas
+        self.puertas = puertas
+        self.velocidad = velocidad
+        self.cilindrada = cilindrada
+
+
+coche = Coche("negro",4,5,200,1200)
+##MAIN##
+print("velocidad -->",coche.velocidad)
+print("cilindrada -->",coche.cilindrada)
+print("color -->",coche.color)
+print("ruedas -->",coche.ruedas)
+print("puertas -->",coche.puertas)
